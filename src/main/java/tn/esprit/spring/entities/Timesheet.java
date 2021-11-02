@@ -9,5 +9,10 @@ import javax.persistence.ManyToOne;
 
 @Entity
 public class Timesheet implements Serializable{
+private static final long serialVersionUID = 3876346912862238239L;
+
+	@EmbeddedId
+	private TimesheetPK timesheetPK;
+	
 
 }
